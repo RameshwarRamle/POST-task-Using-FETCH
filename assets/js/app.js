@@ -71,7 +71,7 @@ fetchallposts();
 
 function createcards(arr) {
     let result = arr.map(obj => {
-        return `<div class="col-md-4" id=${obj.id}>
+        return `<div class="col-md-4 mb-3" id=${obj.id}>
                 <div class="card">
                     <div class="card-header">
                         <h3>${obj.title}</h3>
@@ -117,7 +117,7 @@ function onsubmit(eve) {
 
 
             let col4 = document.createElement("div");
-            col4.className = "col-md-4";
+            col4.className = "col-md-4 mb-3";
             col4.id = data.name;
 
             col4.innerHTML = `<div class="card">
